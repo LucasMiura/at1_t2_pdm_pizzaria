@@ -3,9 +3,10 @@ import { View, Text, StyleSheet } from "react-native";
 export default function ModalScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Janela Modal</Text>
-      <Text style={styles.text}>
-        Este é um modal criado automaticamente pelo Expo Router.
+      <Text style={styles.titulo}>Sobre o Projeto</Text>
+      <Text style={styles.texto}>
+        Este é um modal criado automaticamente pelo Expo Router.  
+        O objetivo da atividade foi criar uma FlatList com informações locais de uma pizzaria.
       </Text>
     </View>
   );
@@ -14,20 +15,21 @@ export default function ModalScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
+    backgroundColor: "#fff7e6",
     justifyContent: "center",
-    padding: 20,
-    backgroundColor: "#fff",
+    padding: 25,
   },
-  title: {
+  titulo: {
     fontSize: 22,
     fontWeight: "bold",
     color: "#d32f2f",
+    textAlign: "center",
+    marginBottom: 15,
   },
-  text: {
+  texto: {
     fontSize: 16,
     color: "#444",
-    marginTop: 15,
+    lineHeight: 22,
     textAlign: "center",
   },
 });
